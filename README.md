@@ -1,5 +1,18 @@
 # Enterprise Roadmap: Invest Within Capacity
 
+## Start here
+
+**Problem:** Choose a set of features that fits team capacity while honoring dependencies.
+
+**What is built:** An independent Python prototype or analysis, with product documents and synthetic data.
+
+**Code to run:** `python3 reproduce.py`
+
+**What you will see:** Scores opportunities, evaluates all 256 combinations, and compares the selected roadmap under changed assumptions.
+
+**Scope:** Runs locally in a terminal. No live customer integration, deployed application, or real AI model call is included.
+
+
 **Status:** Completed decision-model case study. **Demonstrates:** Prioritization, opportunity cost, dependencies, uncertainty, and stakeholder communication.
 
 ## Recommendation
@@ -59,3 +72,11 @@ python3 reproduce.py
 ```
 
 [View the full product management portfolio](https://github.com/bsaikrishnapm-source/bsaikrishnapm-source)
+
+## Inspect the data in Excel
+
+```bash
+python3 export_data.py --output exports
+```
+
+Creates CSV tables from the bundled synthetic data. The terminal output identifies each table and its row count. For a different JSON file, add `--input path/to/data.json`. Existing table CSV files in the output directory are replaced. These exports contain scenario inputs, not production results.
