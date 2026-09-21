@@ -1,16 +1,31 @@
 # Enterprise Roadmap: Invest Within Capacity
 
+## Interactive product demo — implemented
+
+**Investment Planner:** Capacity and reserve controls, dependency-aware enumeration, per-item include/defer rationale, forced-inclusion alternative value and baseline sensitivity comparisons.
+
+### Open the product
+
+1. On this repository, select **Code → Download ZIP**.
+2. Extract the ZIP folder.
+3. Open **demo/index.html** in your browser.
+
+No installation, API key or login is required for the demo. GitHub's Code tab displays source; it does not run HTML applications. Keep the demo folder's files together. This is a local browser experience, not a hosted service.
+
+[Demo walkthrough and architecture](DEMO_GUIDE.md) · [Browser source](demo/index.html) · [Decision logic](demo/engine.js) · [Verification](VALIDATION.md)
+
+
 ## Start here
 
 **Problem:** Choose a set of features that fits team capacity while honoring dependencies.
 
-**What is built:** An independent Python prototype or analysis, with product documents and synthetic data.
+**What is built:** The interactive demo above, plus the original Python case study, product documents and synthetic data.
 
 **Code to run:** `python3 reproduce.py`
 
 **What you will see:** Scores opportunities, evaluates all 256 combinations, and compares the selected roadmap under changed assumptions.
 
-**Scope:** Runs locally in a terminal. No live customer integration, deployed application, or real AI model call is included.
+**Scope:** Includes a local browser demo plus the original Python command-line analysis. No live customer integration, hosted deployment, or real AI model call is included.
 
 
 **Status:** Completed decision-model case study. **Demonstrates:** Prioritization, opportunity cost, dependencies, uncertainty, and stakeholder communication.
@@ -80,3 +95,4 @@ python3 export_data.py --output exports
 ```
 
 Creates CSV tables from the bundled synthetic data. The terminal output identifies each table and its row count. For a different JSON file, add `--input path/to/data.json`. Existing table CSV files in the output directory are replaced. These exports contain scenario inputs, not production results.
+

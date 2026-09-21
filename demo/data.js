@@ -1,0 +1,82 @@
+window.DEMO_DATA = [
+  {
+    "id": "audit",
+    "name": "Assignment audit trail",
+    "reach": 100,
+    "impact": 2,
+    "confidence": 0.9,
+    "effort": 3,
+    "dependency": null,
+    "mandatory": true
+  },
+  {
+    "id": "recovery",
+    "name": "Connector failure recovery",
+    "reach": 80,
+    "impact": 3,
+    "confidence": 0.8,
+    "effort": 4,
+    "dependency": null,
+    "mandatory": false
+  },
+  {
+    "id": "routing",
+    "name": "Agent routing suggestions",
+    "reach": 60,
+    "impact": 3,
+    "confidence": 0.6,
+    "effort": 4,
+    "dependency": "audit",
+    "mandatory": false
+  },
+  {
+    "id": "summary",
+    "name": "AI ticket summary",
+    "reach": 75,
+    "impact": 2,
+    "confidence": 0.5,
+    "effort": 5,
+    "dependency": "audit",
+    "mandatory": false
+  },
+  {
+    "id": "dashboard",
+    "name": "Adoption dashboard",
+    "reach": 100,
+    "impact": 1,
+    "confidence": 0.8,
+    "effort": 3,
+    "dependency": null,
+    "mandatory": false
+  },
+  {
+    "id": "templates",
+    "name": "Workflow starter templates",
+    "reach": 50,
+    "impact": 2,
+    "confidence": 0.7,
+    "effort": 3,
+    "dependency": null,
+    "mandatory": false
+  },
+  {
+    "id": "branding",
+    "name": "Custom portal branding",
+    "reach": 20,
+    "impact": 1,
+    "confidence": 0.8,
+    "effort": 2,
+    "dependency": null,
+    "mandatory": false
+  },
+  {
+    "id": "mobile",
+    "name": "Mobile admin approvals",
+    "reach": 30,
+    "impact": 2,
+    "confidence": 0.4,
+    "effort": 5,
+    "dependency": null,
+    "mandatory": false
+  }
+];
