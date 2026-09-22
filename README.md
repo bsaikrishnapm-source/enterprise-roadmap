@@ -1,5 +1,15 @@
 # Enterprise Roadmap: Invest Within Capacity
 
+## Product decision at a glance
+
+**User need:** Give stakeholders an investment plan that fits capacity and explains what is deferred.
+
+**Decision:** Fund auditability, connector recovery and routing suggestions while reserving one team-week.
+
+**Evidence:** Enumerating 256 combinations of eight fictional opportunities selects 11 team-weeks within a 12 team-week budget. Lower routing confidence changes the preferred bundle, showing where the decision depends on uncertain inputs.
+
+**Inspect:** [Stakeholder memo](STAKEHOLDER_MEMO.md) · [Decision log](DECISIONS.md) · [Interactive planner](DEMO_GUIDE.md) · [Validation](VALIDATION.md).
+
 ## Interactive product demo — implemented
 
 **Investment Planner:** Capacity and reserve controls, dependency-aware enumeration, per-item include/defer rationale, forced-inclusion alternative value and baseline sensitivity comparisons.
